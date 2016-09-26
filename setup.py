@@ -64,7 +64,6 @@ setup(
         'pkginfo',
         'requests',
         'itsdangerous',
-        'newrelic',
         'psycopg2',
         'slacker'
     ]

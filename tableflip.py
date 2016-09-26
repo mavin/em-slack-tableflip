@@ -18,13 +18,9 @@ included in all copies or substantial portions of the Software.
 """
 
 from os import environ
-import newrelic.agent
 from slack_tableflip.app import APP
 
 
 if __name__ == '__main__':
-    # Start New Relic agent
-    newrelic.agent.initialize()
-
     # Start Flask app
     APP.run(host='0.0.0.0', port=int(environ.get("PORT", 5000)))
