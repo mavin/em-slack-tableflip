@@ -23,7 +23,7 @@ included in all copies or substantial portions of the Software.
 
 from datetime import datetime
 from slack_tableflip import APP
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 
 
 # Create database

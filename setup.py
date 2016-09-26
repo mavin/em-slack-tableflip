@@ -60,6 +60,7 @@ setup(
     install_requires=[
         'Flask',
         'Flask-SQLAlchemy',
+        'flask_sqlalchemy',
         'keen',
         'pkginfo',
         'requests',
