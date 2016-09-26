@@ -65,6 +65,7 @@ setup(
         'requests',
         'itsdangerous',
         'psycopg2',
-        'slacker'
+        'slacker',
+        'MySQL-python'
     ]
 )
