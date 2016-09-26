@@ -40,7 +40,7 @@ __module__ = "slack_tableflip.{0}".format(__file__)
 def set_project_info():
     """Set project information from setup tools installation."""
     # CUSTOMIZE THIS VALUE FOR YOUR OWN INSTALLATION
-    base_url = 'https://slack-tableflip.herokuapp.com'
+    base_url = 'https://libertatem-slack-tableflip.herokuapp.com'
 
     # Get app info from the dist
     app_name = 'slack_tableflip'
@@ -48,9 +48,8 @@ def set_project_info():
 
     return {
         'name': app_name,
-        'name_full': 'EM Slack Tableflip',
-        'author_url': 'http://www.erinmorelli.com',
-        'github_url': 'https://github.com/ErinMorelli/em-slack-tableflip',
+        'name_full': 'Libertatem Slack Tableflip',
+        'github_url': 'https://github.com/mavin/slack-tableflip',
         'version': '1.4',
         'version_int': 1.4,
         'package_path': provider.module_path,
@@ -268,7 +267,7 @@ def report_event(name, event):
 
 # Initalize flask app
 APP = Flask(
-    'em-slack-tableflip',
+    'libertatem-slack-tableflip',
     template_folder=TEMPLATE_DIR,
     static_folder=TEMPLATE_DIR
 )
